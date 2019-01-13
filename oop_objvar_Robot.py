@@ -1,7 +1,7 @@
 # coding=UTF-8
 
 class Robot:
-    """表示有一个带有名字的机器人。"""
+    """表示一个带有名字的机器人。"""
     # 一个类变量，用来计数机器人的数量
     population = 0
 
@@ -48,3 +48,5 @@ droid1.die()
 droid2.die()
 
 Robot.how_many()
+
+print(Robot.__doc__)

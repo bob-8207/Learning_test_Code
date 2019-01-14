@@ -8,13 +8,14 @@
 提问：从键盘输入当月利润I，求应发放奖金总数？
 玩蛇网Python解题思路分析：请利用数轴来分界及定位。并要注意定义时需要把奖金定义成长整型的数据类型。
 """
-i = int(input('净利润：'))
-arr = [1000000,600000,400000,200000,100000,0]
-rat = [0.01,0.015,0.03,0.05,0.075,0.1]
-r = 0
-for idx in range(0,6):
-    if i>arr[idx]:
-        r += (i-arr[idx]) * rat[idx]
-        (i-arr[idx]) * rat[idx]
-        i = arr[idx]
-print(r)
+i = int(input("输入利润："))
+jishu = [1000000,600000,400000,200000,100000,0]
+bili = [0.01,0.015,0.03,0.05,0.075,0.1]
+tc = 0
+
+for y in range(0,6):
+    if i > jishu[y]:
+        tc += (i - jishu[y]) * bili[y]
+        print((i - jishu[y]) * bili[y])
+        i = jishu[y]
+print(tc)
